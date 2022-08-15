@@ -1,17 +1,15 @@
+import s from './Header.module.css';
 
-
-
-
+console.log(s);
 
 function Header (){
     return (
-        <header className={"header"}>
+        <header className={`${s.header}`}>
             <div className="container">
-                <div className={"header__bar"}>
-                    <img className={"logo"}
+                <div className={`${s.headerBar}`}>
+                    <img className={`${s.logo}`}
                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png"
                          alt="pic"/>
-                    {/*<input type="text" className={"header__search"}/>*/}
                 </div>
 
             </div>

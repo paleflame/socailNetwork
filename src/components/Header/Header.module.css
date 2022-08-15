@@ -1,0 +1,14 @@
+.header {
+  height: 48px;
+  background: #222222;
+  border: 1px solid #333333;
+}
+.header .headerBar {
+  display: flex;
+  align-self: center;
+}
+.header .headerBar .logo {
+  height: 40px;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

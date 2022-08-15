@@ -1,0 +1,27 @@
+$background-color: #141414;
+$background-color2: #222222;
+$border-color: #333333;
+
+$hover-element-color: #262626;
+$link-blue: #71AAEB;
+
+
+.header {
+
+  height: 48px;
+  background: $background-color2;
+  border: 1px solid $border-color;
+
+
+  .headerBar {
+    display: flex;
+    align-self: center;
+
+    .logo {
+      height: 40px;
+    }
+
+  }
+
+
+}

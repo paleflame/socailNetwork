@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul[class], ol[class] {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+svg {
+  color: #71AAEB;
+}
+
+.content-block {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #222222;
+  border: 1px solid #333333;
+}
+
+.app-wrapper .container {
+  display: grid;
+  grid-template-columns: 164px 1fr;
+}
+
+body {
+  background: #141414;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.column {
+  display: grid;
+  gap: 20px;
+}
+
+.narrowColumn {
+  width: 230px;
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=News.css.map */

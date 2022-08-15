@@ -1,0 +1,20 @@
+.messages {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.messages > * {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.messages .messages__list {
+  background-color: blue;
+  width: 550px;
+}
+.messages .messages__properties {
+  background-color: #71AAEB;
+  width: 230px;
+  flex-shrink: 0;
+}
+
+/*# sourceMappingURL=Messages.module.css.map */

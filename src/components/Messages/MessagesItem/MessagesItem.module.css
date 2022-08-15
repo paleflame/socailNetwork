@@ -1,0 +1,34 @@
+.messagesItem {
+  padding: 10px 15px;
+  background-color: #222;
+  display: grid;
+  height: 70px;
+  grid-template-columns: 50px 1fr;
+  row-gap: 5px;
+  column-gap: 15px;
+  align-items: center;
+}
+.messagesItem .personPicture {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  object-fit: cover;
+  object-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.messagesItem .textWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25px 25px;
+  border-bottom: 1px solid #424242;
+}
+.messagesItem .textWrapper .lastMessageDate {
+  justify-self: end;
+}
+.messagesItem .publisherName {
+  align-self: end;
+  line-height: 0.8em;
+}
+
+/*# sourceMappingURL=MessagesItem.module.css.map */
