@@ -2,7 +2,6 @@ import s from './Profile.module.css';
 import WallPost from "../WallPost/WallPost";
 
 
-
 const wallPostsData = [
     {
         id: 1,
@@ -10,14 +9,21 @@ const wallPostsData = [
         imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
         likes: 1488,
     },
-        {
-            id: 1,
-            text: "посмотрите на эту рыську",
-            imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
-            likes: 12,
-        }
+    {
+        id: 2,
+        text: "посмотрите на эту рыську",
+        imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
+        likes: 12,
+    },
+    {
+        id: 2,
+        text: "В одном из городов Югры на улице заметили рысь!",
+        imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
+        likes: 12,
+    }
 ]
 
+const wallPostsArray = wallPostsData.map((wallPost) => <WallPost likes={wallPost.likes} text={wallPost.text} imageLink={wallPost.imageUrl}/>)
 
 
 function Profile() {
@@ -67,10 +73,9 @@ function Profile() {
                 </section>
 
 
-                <WallPost likes={wallPostsData[1].likes} text={wallPostsData[1].text} imageLink={wallPostsData[1].imageUrl}/>
-
-
-
+                {/*<WallPost likes={wallPostsData[1].likes} text={wallPostsData[1].text}*/}
+                {/*          imageLink={wallPostsData[1].imageUrl}/>*/}
+                {wallPostsArray}
 
             </div>
 
