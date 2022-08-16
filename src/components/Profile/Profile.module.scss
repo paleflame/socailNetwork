@@ -44,20 +44,36 @@
     .profileInfo {
       height: 273px;
 
+
+
       .profileInfo__header {
-        /**/
+        font-size: 19px;
+        font-weight: 400;
 
       }
 
       .profileInfo__status {
-        /**/
+        font-size: 13px;
+        border-bottom: 1px solid #424242;
+        padding-bottom: 5px;
 
       }
 
       .profileInfo__mainInfo {
+        margin-top: 10px;
         display: grid;
         grid-template-columns: 165px 1fr;
         grid-auto-rows: 19.5px;
+        font-size: 13px;
+        row-gap: 5px;
+
+        dt{
+          color: #828282;
+        }
+        dd{
+          color: #71aaeb;
+        }
+
 
 
       }

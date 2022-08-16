@@ -3,6 +3,23 @@ import WallPost from "../WallPost/WallPost";
 
 
 
+const wallPostsData = [
+    {
+        id: 1,
+        text: "каракалы тоже замечательные",
+        imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
+        likes: 1488,
+    },
+        {
+            id: 1,
+            text: "посмотрите на эту рыську",
+            imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
+            likes: 12,
+        }
+]
+
+
+
 function Profile() {
     return (
 
@@ -30,7 +47,7 @@ function Profile() {
                 <section className={`${s.profileInfo} content-block`}>
                     <h1 className={`${s.profileInfo__header}`}>Danil Vasilenko</h1>
                     <p className={`${s.profileInfo__status}`}>пишите в telegram: @blednoe_plamya</p>
-                    <hr/>
+                    {/*<hr/>*/}
 
                     <dl className={`${s.profileInfo__mainInfo}`}>
 
@@ -50,8 +67,7 @@ function Profile() {
                 </section>
 
 
-                <WallPost likes={1488} text={'каракалы тоже замечательные'} imageLink={"https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png"}/>
-                <WallPost likes={12} text={'посмотрите на эту рыську'} imageLink={"https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg"}/>
+                <WallPost likes={wallPostsData[1].likes} text={wallPostsData[1].text} imageLink={wallPostsData[1].imageUrl}/>
 
 
 

@@ -23,7 +23,7 @@ function App() {
                     <Route path="/messages" element={<Messages />} />
                     <Route path="/news" element={<News />} />
                     <Route path="/friends" element={<Friends />} />
-                    <Route path="/" element={<Profile />} />
+                    <Route path="/profile" element={<Profile />} />
 
                 </Routes>
 

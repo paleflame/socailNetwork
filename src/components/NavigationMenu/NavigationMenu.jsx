@@ -9,7 +9,7 @@ function NavigationMenu() {
 
             <ul className={`${s.navigationMenu__list}`}>
 
-                <NavigationMenuItem address={"/"} caption={"Profile"} SVGName={"profile"}/>
+                <NavigationMenuItem address={"/profile"} caption={"Profile"} SVGName={"profile"}/>
                 <NavigationMenuItem address={"/news"} caption={"News"} SVGName={"news"}/>
                 <NavigationMenuItem address={"/messages"} caption={"Messages"} SVGName={"messages"}/>
                 <NavigationMenuItem address={"/friends"} caption={"Friends"} SVGName={"friends"}/>

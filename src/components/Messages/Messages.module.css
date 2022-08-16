@@ -11,7 +11,7 @@
   background-color: blue;
   width: 550px;
 }
-.messages .messages__properties {
+.messages .messages__chatWindow {
   background-color: #71AAEB;
   width: 230px;
   flex-shrink: 0;
