@@ -12,7 +12,7 @@ import NotFound from "../NotFound/NotFound";
 
 
 
-function App() {
+function App(props) {
     return (
         <div className="app-wrapper">
             <Header />
@@ -24,7 +24,7 @@ function App() {
                     <Route path="/messages" element={<Messages />} />
                     <Route path="/news" element={<News />} />
                     <Route path="/friends" element={<Friends />} />
-                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/profile" element={<Profile wallPostsData={props.wallPostsData}  />} />
                     <Route path={"*"} element={<NotFound/>}/>
 
                 </Routes>

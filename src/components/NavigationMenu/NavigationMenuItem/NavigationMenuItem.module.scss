@@ -6,31 +6,41 @@ $hover-element-color: #262626;
 $link-blue: #71AAEB;
 
 
+.navigationMenu__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 154px;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 5px;
+
+  &:hover {
+    background-color: #262626;
 
 
-      .navigationMenu__link{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 154px;
-        height: 30px;
-        border-radius: 4px;
-        padding-left: 5px;
-
-        &:hover {
-          background-color: #262626;
-
-        }
+  }
 
 
-        .navigationMenu__icon {
-          /**/
-        }
+  .navigationMenu__icon {
+    /**/
+  }
 
-        .navigationMenu__caption {
-        /**/
-        }
-      }
+  .navigationMenu__caption {
+    /**/
+  }
+}
+
+.navigationMenu__link_active {
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 154px;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 5px;
+}
 
 
 

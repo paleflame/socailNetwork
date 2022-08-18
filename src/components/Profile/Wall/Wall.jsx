@@ -1,18 +1,18 @@
 import s from './Wall.module.css';
 import AddWallPost from "./AddWallPost/AddWallPost";
 import WallPost from "./WallPost/WallPost";
+import wallPostsData from "../../../index";
 
 
-
-//const wallPostsArray = wallPostsData.map((wallPost) => <WallPost likes={wallPost.likes} text={wallPost.text} imageLink={wallPost.imageUrl}/>);
-
-
-
-function Wall() {
+function Wall(props) {
     return (
         <section className={s.wall}>
             <AddWallPost />
-            {/*{wallPostsArray}*/}
+            { wallPostsData.map((post)=> {
+            return(
+            <WallPost text={props.wallPostsData.text} imageLink={props.wallPostsData.imageUrl}  likes={props.wallPostsData.likes}/>
+            )
+        })}
 
         </section>
 

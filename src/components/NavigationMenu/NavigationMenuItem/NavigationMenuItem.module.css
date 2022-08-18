@@ -17,4 +17,15 @@
   /**/
 }
 
+.navigationMenu__link_active {
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 154px;
+  height: 30px;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+
 /*# sourceMappingURL=NavigationMenuItem.module.css.map */

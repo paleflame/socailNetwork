@@ -7,7 +7,7 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
 
-function Profile() {
+function Profile(props) {
     return (
 
 
@@ -26,7 +26,7 @@ function Profile() {
                 <ProfileInfo />
 
 
-                <Wall />
+                <Wall wallPostsData={props.wallPostsData} />
 
             </div>
 
