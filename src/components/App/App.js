@@ -6,6 +6,7 @@ import Messages from "../Messages/Messages";
 import {Route, Routes} from "react-router-dom";
 import News from "../News/News";
 import Friends from "../Friends/Friends";
+import NotFound from "../NotFound/NotFound";
 
 
 
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/news" element={<News />} />
                     <Route path="/friends" element={<Friends />} />
                     <Route path="/profile" element={<Profile />} />
+                    <Route path={"*"} element={<NotFound/>}/>
 
                 </Routes>
 
