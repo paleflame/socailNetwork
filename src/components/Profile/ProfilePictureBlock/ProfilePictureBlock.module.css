@@ -1,0 +1,17 @@
+.profilePictureBlock .profilePictureBlock__picture {
+  width: 100%;
+  height: 198px;
+  object-fit: cover;
+  object-position: center;
+}
+.profilePictureBlock .profilePictureBlock__edit {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #656565;
+  text-align: center;
+}
+
+/*# sourceMappingURL=ProfilePictureBlock.module.css.map */

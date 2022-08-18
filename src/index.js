@@ -5,6 +5,27 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
 
+const wallPostsData = [
+    {
+        id: 1,
+        text: "каракалы тоже замечательные",
+        imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
+        likes: 1488,
+    },
+    {
+        id: 2,
+        text: "посмотрите на эту рыську",
+        imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
+        likes: 12,
+    },
+    {
+        id: 2,
+        text: "В одном из городов Югры на улице заметили рысь!",
+        imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
+        likes: 12,
+    }
+]
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +33,7 @@ root.render(
   <React.StrictMode>
       <BrowserRouter>
 
-          <App />
+          <App data={[wallPostsData]} />
 
       </BrowserRouter>
 

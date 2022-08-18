@@ -37,7 +37,7 @@ function WallPost(props) {
 
                     </li>
                     <li className={`${s.icon}`}>
-                        <img className={"comment-icon"} src="src/components/WallPost/WallPost" alt=""/>
+                        <img className={"comment-icon"} src="src/components/Profile/Wall/WallPost/WallPost" alt=""/>
                         <span className={"counter"}>1
 
 
@@ -45,7 +45,7 @@ function WallPost(props) {
 
                     </li>
                     <li className={`${s.icon}`}>
-                        <img className={"repost-icon"} src="src/components/WallPost/WallPost" alt=""/>
+                        <img className={"repost-icon"} src="src/components/Profile/Wall/WallPost/WallPost" alt=""/>
                         <span className={"counter"}>3
 
                         </span>

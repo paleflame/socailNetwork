@@ -1,0 +1,56 @@
+.wallPost {
+  display: grid;
+  row-gap: 12px;
+}
+.wallPost .publisherInfo {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 25px 25px;
+  row-gap: 5px;
+  column-gap: 15px;
+  align-items: center;
+}
+.wallPost .publisherInfo .publisherPicture {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  object-fit: cover;
+  object-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.wallPost .publisherInfo .publisherName {
+  align-self: end;
+  line-height: 0.8em;
+}
+.wallPost .publisherInfo .publicationDate {
+  align-self: start;
+  line-height: 0.8em;
+  grid-column: 2/3;
+}
+.wallPost .content {
+  display: grid;
+  row-gap: 10px;
+}
+.wallPost .content .content__text {
+  display: block;
+}
+.wallPost .content .content__image {
+  width: 100%;
+}
+.wallPost .statistic .icons {
+  display: flex;
+  gap: 10px;
+}
+.wallPost .statistic .icons .icon {
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 12px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+}
+
+/*# sourceMappingURL=AddWallPost.module.css.map */

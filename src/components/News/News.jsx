@@ -1,5 +1,5 @@
 import './News.css';
-import WallPost from "../WallPost/WallPost";
+import WallPost from "../Profile/Wall/WallPost/WallPost";
 
 function News() {
     return (

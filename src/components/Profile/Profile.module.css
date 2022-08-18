@@ -4,46 +4,8 @@
   gap: 15px;
   align-items: flex-start;
 }
-.profile .profilePictureBlock .profilePictureBlock__picture {
-  width: 100%;
-  height: 198px;
-  object-fit: cover;
-  object-position: center;
-}
-.profile .profilePictureBlock .profilePictureBlock__edit {
-  display: block;
-  margin-top: 10px;
-  width: 100%;
-  height: 30px;
-  border-radius: 5px;
-  background-color: #656565;
-  text-align: center;
-}
-.profile .profileInfo {
-  height: 273px;
-}
-.profile .profileInfo .profileInfo__header {
-  font-size: 19px;
-  font-weight: 400;
-}
-.profile .profileInfo .profileInfo__status {
-  font-size: 13px;
-  border-bottom: 1px solid #424242;
-  padding-bottom: 5px;
-}
-.profile .profileInfo .profileInfo__mainInfo {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 165px 1fr;
-  grid-auto-rows: 19.5px;
-  font-size: 13px;
-  row-gap: 5px;
-}
-.profile .profileInfo .profileInfo__mainInfo dt {
-  color: #828282;
-}
-.profile .profileInfo .profileInfo__mainInfo dd {
-  color: #71aaeb;
+.profile .wideColumn {
+  width: 550px;
 }
 
 /*# sourceMappingURL=Profile.module.css.map */
