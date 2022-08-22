@@ -4,8 +4,10 @@
 
 
 .messagesItem{
-  padding: 10px 15px;
+  padding: 0 15px;
   background-color: #222;
+  border-radius: inherit;
+
 
   display: grid;
   height: 70px;
@@ -14,6 +16,12 @@
   row-gap: 5px;
   column-gap: 15px;
   align-items: center;
+
+  &:hover{
+    background-color: #333;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #424242;
+  }
 
   .personPicture {
 
@@ -32,7 +40,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 25px 25px;
-    border-bottom: 1px solid #424242;
+    padding: 10px 15px;
+
+    &:not(:hover){
+      border-bottom: 1px solid #424242;
+    }
+
+
+
 
     .personName{
 

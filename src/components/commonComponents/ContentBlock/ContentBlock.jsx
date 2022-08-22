@@ -9,3 +9,5 @@ function ContentBlock(){
     )
 
 }
+
+export {ContentBlock};

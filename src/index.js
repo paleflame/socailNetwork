@@ -8,7 +8,7 @@ import Messages from "./components/Messages/Messages";
 import News from "./components/News/News";
 import Friends from "./components/Friends/Friends";
 import Profile from "./components/Profile/Profile";
-import NotFound from "./components/NotFound/NotFound";
+import NotFound from "./components/commonComponents/NotFound/NotFound";
 import {state} from "./redux/state";
 
 

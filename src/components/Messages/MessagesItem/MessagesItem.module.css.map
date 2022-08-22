@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["MessagesItem.module.scss"],"names":[],"mappings":"AAKA;EACE;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;;AAEA;EAEE;EACA;EACA;EACA;EAEA;EACA;EACA;;AAIF;EACE;EACA;EACA;EACA;;AASA;EACE;;AAKJ;EACE;EACA","file":"MessagesItem.module.css"}
+{"version":3,"sourceRoot":"","sources":["MessagesItem.module.scss"],"names":[],"mappings":"AAKA;EACE;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;;AAEA;EACE;EACA;EACA;;AAGF;EAEE;EACA;EACA;EACA;EAEA;EACA;EACA;;AAIF;EACE;EACA;EACA;EACA;;AAEA;EACE;;AAaF;EACE;;AAKJ;EACE;EACA","file":"MessagesItem.module.css"}

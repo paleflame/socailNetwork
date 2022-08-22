@@ -1,6 +1,6 @@
 import s from './NavigationMenuItem.module.css';
 import {NavLink} from "react-router-dom";
-import  ChooseSVG from '../../ChooseSVG/ChooseSVG'
+import  ChooseSVG from '../../commonComponents/ChooseSVG/ChooseSVG'
 
 
 function NavigationMenuItem (props){

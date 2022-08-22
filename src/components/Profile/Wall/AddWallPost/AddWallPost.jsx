@@ -1,15 +1,26 @@
 import s from './AddWallPost.module.css';
-
+import React from 'react';
 console.log(s);
 
 
+
+
 function AddWallPost(props) {
+
+    const newPostElement = React.createRef();
+    const addPost = () =>{
+        alert(newPostElement.current.value);
+    }
+
+
     return (
         <div className={"content-block"}>
             <label>
-                <input type="text"/> добавить новый пост
+                <input ref={newPostElement} type="text"/>
             </label>
-
+            <button onClick={addPost}>
+                добавить новый пост
+            </button>
         </div>
     )
 

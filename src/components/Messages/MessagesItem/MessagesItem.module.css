@@ -1,12 +1,18 @@
 .messagesItem {
-  padding: 10px 15px;
+  padding: 0 15px;
   background-color: #222;
+  border-radius: inherit;
   display: grid;
   height: 70px;
   grid-template-columns: 50px 1fr;
   row-gap: 5px;
   column-gap: 15px;
   align-items: center;
+}
+.messagesItem:hover {
+  background-color: #333;
+  border-bottom: 1px solid #424242;
+  border-top: 1px solid #424242;
 }
 .messagesItem .personPicture {
   grid-column: 1/2;
@@ -21,6 +27,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 25px 25px;
+  padding: 10px 15px;
+}
+.messagesItem .textWrapper:not(:hover) {
   border-bottom: 1px solid #424242;
 }
 .messagesItem .textWrapper .lastMessageDate {

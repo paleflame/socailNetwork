@@ -1,5 +1,6 @@
 import s from './Messages.module.css';
 import MessagesItem from "./MessagesItem/MessagesItem";
+import SearchField from "./SearchField/SearchField";
 
 
 
@@ -8,7 +9,11 @@ function Messages (props){
      <main className={`${s.messages}`}>
 
 
-             <ol className={`wideColumn ${s.messages__list}`}>
+
+         <div>
+             <SearchField/>
+
+             <ol className={`${s.messages__list}`}>
 
                  {props.messagesItemsData.map(messageItem => {
                      return(
@@ -20,6 +25,11 @@ function Messages (props){
 
 
              </ol>
+
+         </div>
+
+
+
 
 
 
