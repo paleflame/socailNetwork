@@ -1,3 +1,5 @@
+import messagesItem from "../components/Messages/MessagesItem/MessagesItem";
+
 const state = {
     wallPostsData : [
         {
@@ -5,18 +7,21 @@ const state = {
             text: "каракалы тоже замечательные",
             imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
             likes: 1488,
+            messages: ["Привет", "Как дела?", "Хорошо."]
         },
         {
             id: 2,
             text: "посмотрите на эту рыську",
             imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
             likes: 12,
+            messages: ["Раз", "Два", "Три", "Четыре", "Пять"]
         },
         {
             id: 2,
             text: "В одном из городов Югры на улице заметили рысь!",
             imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
             likes: 12,
+            messages: ["Pa", "pu", "pa", "pu", "pi"]
         }
     ],
 
@@ -50,3 +55,4 @@ const state = {
 
 export {state};
 
+const returnMessagesItemsData = ()=> state.messagesItemsData;

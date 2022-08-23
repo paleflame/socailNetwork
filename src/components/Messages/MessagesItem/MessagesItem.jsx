@@ -1,10 +1,11 @@
 import s from './MessagesItem.module.css';
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useParams} from "react-router-dom";
 
 
 function MessagesItem(props) {
-    return (
 
+    return (
+        <NavLink to={`${props.id}`}>
 
             <li className={`${s.messagesItem}`}>
 
@@ -26,6 +27,13 @@ function MessagesItem(props) {
 
 
             </li>
+
+
+
+        </NavLink>
+
+
+
 
     )
 }

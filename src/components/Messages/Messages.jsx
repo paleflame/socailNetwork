@@ -1,23 +1,26 @@
 import s from './Messages.module.css';
 import MessagesItem from "./MessagesItem/MessagesItem";
 import SearchField from "./SearchField/SearchField";
+import {Outlet} from "react-router-dom";
 
 
 
 function Messages (props){
+    debugger;
+
     return (
      <main className={`${s.messages}`}>
 
 
 
-         <div>
+         <div className={s.messagesPeople}>
              <SearchField/>
 
              <ol className={`${s.messages__list}`}>
 
                  {props.messagesItemsData.map(messageItem => {
                      return(
-                         <MessagesItem personName={messageItem.personName} date={messageItem.lastMessageDate} messageText={messageItem.lastMessageText} personImageLink={messageItem.personAvatarLink}/>
+                         <MessagesItem personName={messageItem.personName} date={messageItem.lastMessageDate} messageText={messageItem.lastMessageText} personImageLink={messageItem.personAvatarLink} id={messageItem.id}/>
 
                      );
                  } )
@@ -28,13 +31,8 @@ function Messages (props){
 
          </div>
 
-
-
-
-
-
          <section className={`${s.messages__chatWindow}`}>
-
+             <Outlet />
 
          </section>
 

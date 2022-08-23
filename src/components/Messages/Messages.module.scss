@@ -7,9 +7,11 @@ $link-blue: #71AAEB;
 
 
 .messages{
+  min-height: 90vh;
   display: flex;
   gap: 15px;
   margin-top: 15px;
+  padding-bottom: 20px;
 
 
   & > *{
@@ -17,9 +19,13 @@ $link-blue: #71AAEB;
     border-radius: 5px;
   }
 
+  .messagesPeople {
+    align-self: stretch;
+  }
+
   .messages__list{
     background-color: blue;
-
+    align-self: stretch;
     width: 230px;
 
 
@@ -30,6 +36,7 @@ $link-blue: #71AAEB;
     background-color: #71AAEB;
     width: 550px;
     flex-shrink: 0;
+    align-self: flex-start;
 
 
   }

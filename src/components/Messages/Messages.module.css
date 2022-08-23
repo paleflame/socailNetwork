@@ -1,20 +1,27 @@
 .messages {
+  min-height: 90vh;
   display: flex;
   gap: 15px;
   margin-top: 15px;
+  padding-bottom: 20px;
 }
 .messages > * {
   border: 1px solid #333;
   border-radius: 5px;
 }
+.messages .messagesPeople {
+  align-self: stretch;
+}
 .messages .messages__list {
   background-color: blue;
+  align-self: stretch;
   width: 230px;
 }
 .messages .messages__chatWindow {
   background-color: #71AAEB;
   width: 550px;
   flex-shrink: 0;
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=Messages.module.css.map */

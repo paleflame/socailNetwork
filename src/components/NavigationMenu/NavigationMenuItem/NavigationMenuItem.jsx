@@ -5,6 +5,7 @@ import  ChooseSVG from '../../commonComponents/ChooseSVG/ChooseSVG'
 
 function NavigationMenuItem (props){
     return (
+
                 <li className={`${s.navigationMenu__item}`}>
                     <NavLink to={props.address} className={({ isActive }) => {
                         if (isActive){
