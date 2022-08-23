@@ -7,21 +7,21 @@ const state = {
             text: "каракалы тоже замечательные",
             imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
             likes: 1488,
-            messages: ["Привет", "Как дела?", "Хорошо."]
+
         },
         {
             id: 2,
             text: "посмотрите на эту рыську",
             imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
             likes: 12,
-            messages: ["Раз", "Два", "Три", "Четыре", "Пять"]
+
         },
         {
             id: 2,
             text: "В одном из городов Югры на улице заметили рысь!",
             imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
             likes: 12,
-            messages: ["Pa", "pu", "pa", "pu", "pi"]
+
         }
     ],
 
@@ -32,6 +32,7 @@ const state = {
             lastMessageDate: "yesterday",
             lastMessageText: "я гей",
             personAvatarLink: "https://sun3-8.userapi.com/impg/RHHYL_ZGktueb66u0YRpwh3glDDYhM42we5bcg/ljZQt1fYEww.jpg?size=1920x1920&quality=96&sign=a0db045925d93726fb3e5f5121b5af9c&type=album",
+            messages: ["Pa", "pu", "pa", "pu", "pi"],
 
         },
         {
@@ -40,6 +41,7 @@ const state = {
             lastMessageDate: "yesterday",
             lastMessageText: "я футбольный мячик",
             personAvatarLink: "https://sun3-13.userapi.com/impg/SMe19hPxbwZxYD7goJWzaouzWWrsAKqBMKStBw/5SXKHRAamk8.jpg?size=1440x2160&quality=96&sign=cd0dbf1ed27858abaaedb5ef5ce6c7bb&type=album",
+            messages: ["Раз", "Два", "Три", "Четыре", "Пять"]
 
         },
         {
@@ -48,11 +50,27 @@ const state = {
             lastMessageDate: "yesterday",
             lastMessageText: "На самом деле реально...",
             personAvatarLink: "https://sun9-81.userapi.com/impg/IdLN5CaIPmBww8j5iPuo79_DlshdQcK75qkgSA/mVVh2SvfY-A.jpg?size=1440x1440&quality=95&sign=325cf11cdb5d7b67e9215924e65c3d7e&type=album",
+            messages: ["Привет", "Как дела?", "Хорошо."]
 
         },
     ]
 }
 
 export {state};
+
+export const addWallPostToState = (wallPostData)=>{
+    debugger;
+    state.wallPostsData.push(
+
+        {
+            id: 4,
+            text: wallPostData.text,
+            imageUrl: wallPostData.imageUrl || "",
+            likes: 0,
+
+
+    })
+
+}
 
 const returnMessagesItemsData = ()=> state.messagesItemsData;

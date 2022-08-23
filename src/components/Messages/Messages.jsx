@@ -6,7 +6,6 @@ import {Outlet} from "react-router-dom";
 
 
 function Messages (props){
-    debugger;
 
     return (
      <main className={`${s.messages}`}>

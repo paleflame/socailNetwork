@@ -26,7 +26,7 @@ function Profile(props) {
                 <ProfileInfo />
 
 
-                <Wall wallPostsData={props.wallPostsData} />
+                <Wall wallPostsData={props.wallPostsData} addWallPostToState={props.addWallPostToState} />
 
             </div>
 
