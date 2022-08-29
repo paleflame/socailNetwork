@@ -1,5 +1,6 @@
 import s from './AddWallPost.module.css';
 import React from 'react';
+import {changeNewPostText} from "../../../../redux/state";
 console.log(s);
 
 
@@ -7,22 +8,30 @@ console.log(s);
 
 function AddWallPost(props) {
 
+
     const newPostElement = React.createRef();
     const addPost = () =>{
 
         props.addWallPostToState(
             {
                 text: newPostElement.current.value,
-                imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/63/Lynx_lynx2.jpg",
+                imageUrl: "",
             }
         )
+        changeNewPostText("");
     }
 
+    const onPostChange = ()=>{
+        const text = newPostElement.current.value;
+        changeNewPostText(text);
+
+
+    }
 
     return (
         <div className={"content-block"}>
             <label>
-                <input ref={newPostElement} type="text" placeholder={"Текст"}/>
+                <textarea onChange={onPostChange} name="" id="" cols="20" rows="2" ref={newPostElement} value={props.newPostText} placeholder={"Текст"}/>
 
             </label>
             <button onClick={addPost}>

@@ -2,7 +2,7 @@ import s from './Messages.module.css';
 import MessagesItem from "./MessagesItem/MessagesItem";
 import SearchField from "./SearchField/SearchField";
 import {Outlet} from "react-router-dom";
-
+import {returnMessagesItemsData} from "../../redux/state";
 
 
 function Messages (props){
@@ -14,6 +14,7 @@ function Messages (props){
 
          <div className={s.messagesPeople}>
              <SearchField/>
+
 
              <ol className={`${s.messages__list}`}>
 

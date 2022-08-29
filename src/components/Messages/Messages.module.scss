@@ -20,7 +20,7 @@ $link-blue: #71AAEB;
   }
 
   .messagesPeople {
-    align-self: stretch;
+
   }
 
   .messages__list{
@@ -33,10 +33,12 @@ $link-blue: #71AAEB;
   }
 
   .messages__chatWindow{
-    background-color: #71AAEB;
     width: 550px;
+    min-height: 90vh;
     flex-shrink: 0;
-    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 
 
   }

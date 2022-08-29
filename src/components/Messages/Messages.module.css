@@ -9,19 +9,18 @@
   border: 1px solid #333;
   border-radius: 5px;
 }
-.messages .messagesPeople {
-  align-self: stretch;
-}
 .messages .messages__list {
   background-color: blue;
   align-self: stretch;
   width: 230px;
 }
 .messages .messages__chatWindow {
-  background-color: #71AAEB;
   width: 550px;
+  min-height: 90vh;
   flex-shrink: 0;
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=Messages.module.css.map */

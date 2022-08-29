@@ -1,0 +1,24 @@
+.chatContent{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+
+  .chatContent__messages{
+    background: #222;
+    height: 90%;
+    flex-grow: 2;
+
+  }
+
+  .chatContent__input{
+    background: #292929;
+    height: 10%;
+
+    textarea {
+        resize: none;
+        min-height: 10px;
+    }
+  }
+}

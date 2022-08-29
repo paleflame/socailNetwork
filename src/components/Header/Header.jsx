@@ -1,7 +1,5 @@
 import s from './Header.module.css';
 
-console.log(s);
-
 function Header (){
     return (
         <header className={`${s.header}`}>

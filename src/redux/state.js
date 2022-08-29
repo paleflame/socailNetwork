@@ -1,29 +1,33 @@
 import messagesItem from "../components/Messages/MessagesItem/MessagesItem";
+import {rerenderEntireTree} from "../render";
 
 const state = {
-    wallPostsData : [
-        {
-            id: 1,
-            text: "каракалы тоже замечательные",
-            imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
-            likes: 1488,
+    profileData:{
+        wallPostsData : [
+            {
+                id: 1,
+                text: "каракалы тоже замечательные",
+                imageUrl: "https://memepedia.ru/wp-content/uploads/2020/10/big-floppa-meme.png",
+                likes: 1488,
 
-        },
-        {
-            id: 2,
-            text: "посмотрите на эту рыську",
-            imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
-            likes: 12,
+            },
+            {
+                id: 2,
+                text: "посмотрите на эту рыську",
+                imageUrl: "https://blog.nature.org/science/files/2020/01/tnc_42185468_preview.jpg",
+                likes: 12,
 
-        },
-        {
-            id: 2,
-            text: "В одном из городов Югры на улице заметили рысь!",
-            imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
-            likes: 12,
+            },
+            {
+                id: 2,
+                text: "В одном из городов Югры на улице заметили рысь!",
+                imageUrl: "https://ugra-news.ru/upload/iblock/5c0/483583.jpg",
+                likes: 12,
 
-        }
-    ],
+            }
+        ],
+        newPostText: "что-то там",
+    },
 
     messagesItemsData:  [
         {
@@ -56,11 +60,12 @@ const state = {
     ]
 }
 
+
 export {state};
 
 export const addWallPostToState = (wallPostData)=>{
-    debugger;
-    state.wallPostsData.push(
+
+    state.profileData.wallPostsData.push(
 
         {
             id: 4,
@@ -69,8 +74,13 @@ export const addWallPostToState = (wallPostData)=>{
             likes: 0,
 
 
-    })
+    });
+    rerenderEntireTree(state, addWallPostToState);
 
 }
+export const returnMessagesItemsData = ()=> state.messagesItemsData;
 
-const returnMessagesItemsData = ()=> state.messagesItemsData;
+export const changeNewPostText =(text) =>{
+    state.profileData.newPostText = text;
+    rerenderEntireTree(state);
+}

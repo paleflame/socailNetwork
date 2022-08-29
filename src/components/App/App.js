@@ -1,7 +1,6 @@
 import './App.css';
 import Header from "../Header/Header";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
-import Messages from "../Messages/Messages";
 import {Outlet} from "react-router-dom";
 
 function App(props) {
